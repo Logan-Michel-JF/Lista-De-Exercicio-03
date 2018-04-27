@@ -14,15 +14,15 @@ public class Ex04L3{
             
             String modelo = JOptionPane.showInputDialog( "Este é um cadastro de um novo carro.\nModelo: ");
             double valor = Double.parseDouble(JOptionPane.showInputDialog( "Valor: "));
-            int ano = Integer.parseInt(JOptionPane.showInputDialog( "Ano: "));
+            int ano = Integer.parseInt(JOptionPane.showInputDialog("Ano: "));
             contador = contador + 1;
             somaAno = somaAno + ano;
             somaValor = somaValor + valor;
         
-        char modelo = modelo.charAt (0);
-            if (modelo == 'G'){
+        char letra = modelo.charAt (0);
+            if (letra == 'G' || letra == 'g'){
                 quantidadeDeCarrosG = quantidadeDeCarrosG + 1;
-            }else if (modelo == 'A'){
+            }else if (letra == 'A' || letra == 'a'){
                 quantidadeDeCarrosA = quantidadeDeCarrosA + 1;
             }
 
